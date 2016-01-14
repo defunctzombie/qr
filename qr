@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var qrcode = require('qrcode-terminal');
+
+var str = '';
+process.stdin.on('data', function(chunk) {
+    str += chunk;
+})
+.on('end', function() {
+    qrcode.generate(str);
+})

@@ -1,0 +1,10 @@
+{
+    "name": "qrcopy",
+    "version": "0.0.0",
+    "bin": {
+        "qr": "./qr"
+    },
+    "dependencies": {
+        "qrcode-terminal": "0.10.0"
+    }
+}
